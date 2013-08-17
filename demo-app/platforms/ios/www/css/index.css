@@ -131,3 +131,15 @@ ul {
     border: 2px solid;
     border-radius: 10px;
 }
+
+.demo_insta {
+    background-image: url('../img/instagram-logo.png');
+    background-size: 100%, 100%;
+    border: initial;
+}
+
+.demo_trello {
+    background-image: url('../img/trello-logo.png');
+    background-size: 100%, 100%;
+    border: initial;
+}

@@ -1,4 +1,4 @@
-/Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/gen/com/fullsail/testApp/R.java \
+/Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/gen/com/deus/collegetracker/R.java \
  : /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/res/drawable/icon.png \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/res/drawable-hdpi/ic_launcher.png \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/res/drawable-hdpi/icon.png \
