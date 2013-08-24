@@ -2,7 +2,7 @@
 <!--
     Deus Duke
     AVF 1308
-    Week 02
+    Week 03
 -->
 <html>
     <head>
@@ -24,21 +24,21 @@
             <ul class="demo_list">
                 <li>
                     <div class="demo_placeholder"></div>
-                    <a href="#">Camera</a>
+                    <a href="geolocation.html">Geolocation</a>
                 </li>
                 <li>
                     <div class="demo_placeholder"></div>
-                    <a href="#">Network</a>
+                    <a id="connectivity" href="#">Connectivity</a>
                 </li>
             </ul>
             <ul class="demo_list">
                 <li>
                     <div class="demo_placeholder"></div>
-                    <a href="#">Gallery</a>
+                    <a href="gallery.html">Gallery</a>
                 </li>
                 <li>
                     <div class="demo_placeholder"></div>
-                    <a href="#">Storage</a>
+                    <a href="contacts.html">Contacts</a>
                 </li>
                 <li>
                     <div class="demo_placeholder"></div>
@@ -68,7 +68,7 @@
                     <a href="week2research.html">Week 2 Research</a>
                 </li>
                 <li>
-                    <a href="#">Week 3 Research</a>
+                    <a href="week3research.html">Week 3 Research</a>
                 </li>
                 <li>
                     <a href="#">Week 4 Research</a>
@@ -77,9 +77,37 @@
         </div>
 
         <script type="text/javascript" src="cordova.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+
+            $("a#connectivity").click(function(){
+                var state = "";
+                var networkState = navigator.connection.type;
+
+                switch(networkState) {
+                    case Connection.NONE:
+                        state = "You currently don't have a network connection";
+                        break;
+                    case Connection.CELL:
+                    case Connection.CELL_2G:
+                    case Connection.CELL_3G:
+                    case Connection.CELL_4G:
+                        state = "You are currently on a cellular connection";
+                        break;
+                    case Connection.WIFI:
+                        state = "You are currently on a wifi connection";
+                        break;
+                    case Connection.ETHERNET:
+                        state = "You are currently on a ethernet connection";
+                        break;
+                    default:
+                        state = "Could not determine your network state";
+                }
+
+                navigator.notification.alert(state);
+            })
         </script>
     </body>
 </html>

@@ -1,9 +1,12 @@
 /*
  * Deus Duke
  * AVF 1308
- * Week 02
+ * Week 03
  *
  */
+var destinationType;
+var pictureSource;
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -15,6 +18,10 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+
+        window.onerror = function(message, url, lineNumber) {
+            console.log("Error: "+message+" in "+url+" at line "+lineNumber);
+        }
     },
     // deviceready Event Handler
     //
@@ -22,6 +29,9 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        destinationType: navigator.camera.DestinationType;
+        pictureSource: navigator.camera.PictureSourceType;
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

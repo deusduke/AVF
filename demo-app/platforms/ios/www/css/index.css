@@ -143,3 +143,25 @@ ul {
     background-size: 100%, 100%;
     border: initial;
 }
+
+.button {
+    background-color: beige;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+#contacts {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#contacts li {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
