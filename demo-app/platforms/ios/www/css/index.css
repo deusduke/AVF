@@ -127,9 +127,31 @@ ul {
     width: 50px;
     height: 50px;
     margin-top: 20px;
-
-    border: 2px solid;
+    border: 2px solid white;
     border-radius: 10px;
+    background: no-repeat center center;
+    background-size: 70%;
+    background-color: #777;
+}
+
+.geo_icon {
+    background-image: url('../img/location_icon.png');
+}
+
+.con_icon {
+    background-image: url('../img/connectivity_icon.png');
+}
+
+.gal_icon {
+    background-image: url('../img/gallery_icon.png');
+}
+
+.cont_icon {
+    background-image: url('../img/contacts_icon.png');
+}
+
+.com_icon {
+    background-image: url('../img/compass_icon.png');
 }
 
 .demo_insta {

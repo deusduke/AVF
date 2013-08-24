@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+    Deus Duke
+    AVF 1308
+    Week 03
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Gallery Example</title>
+    </head>
+    <body>
+    	<a href='index.html'>Back</a>
+        <h1>Project Tracker</h1>
+        <h3>Tap the button to load an image from the gallery!</h3>
+
+        <div class="button" onclick="getGalleryPhoto();" >Load Image</div>
+        
+        <div id="full_container">
+        	<img id="gallery_image">
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            function getGalleryPhoto() {
+                getPhoto(navigator.camera.PictureSourceType.PHOTOLIBRARY);
+            }
+
+            function getPhoto(source) {
+                var options = { 
+                    destinationType: navigator.camera.PictureSourceType.File_URI,
+                    sourceType: source
+                };
+
+                navigator.camera.getPicture(
+                    onSuccess, 
+                    onFail, 
+                    options
+                );
+            }
+
+            function onSuccess(source) {
+                //navigator.notification.alert('It\'s working: ' + message);
+                
+                $('#gallery_image').attr('src', source);
+            }
+
+            function onFail(message) {
+                navigator.notification.alert('Failed because: ' + message);
+            }
+        </script>
+    </body>
+</html>
