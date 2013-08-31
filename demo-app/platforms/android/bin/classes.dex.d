@@ -15,6 +15,8 @@
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager$2.class \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager$3.class \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/contacts/ContactManager.class \
+/Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/device/Device$1.class \
+/Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/device/Device.class \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification$1$1.class \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification$1$2.class \
 /Users/deusduke/Dropbox/FullSail/AVF/avf-apps/demo-app/platforms/android/bin/classes/org/apache/cordova/dialogs/Notification$1.class \

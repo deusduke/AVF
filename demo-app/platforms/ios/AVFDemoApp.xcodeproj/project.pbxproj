@@ -54,6 +54,7 @@
 		60F2A0A417C871210053A449 /* CDVReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F2A0A217C871210053A449 /* CDVReachability.m */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		B013F32079924A27BB7FF526 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 54A7A00610384DE1870C5AE1 /* CDVDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,8 @@
 		8D1107310486CEB800E47090 /* AVFDemoApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AVFDemoApp-Info.plist"; path = "../AVFDemoApp-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = AVFDemoApp/config.xml; sourceTree = "<group>"; };
+		54A7A00610384DE1870C5AE1 /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.core.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		35B354E5F30842B4B893AD8A /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.core.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,8 @@
 				60F2A0A017C871210053A449 /* CDVConnection.m */,
 				60F2A0A117C871210053A449 /* CDVReachability.h */,
 				60F2A0A217C871210053A449 /* CDVReachability.m */,
+				54A7A00610384DE1870C5AE1 /* CDVDevice.m */,
+				35B354E5F30842B4B893AD8A /* CDVDevice.h */,
 			);
 			name = Plugins;
 			path = AVFDemoApp/Plugins;
@@ -477,6 +482,7 @@
 				60F2A09E17C871130053A449 /* CDVLocation.m in Sources */,
 				60F2A0A317C871210053A449 /* CDVConnection.m in Sources */,
 				60F2A0A417C871210053A449 /* CDVReachability.m in Sources */,
+				B013F32079924A27BB7FF526 /* CDVDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

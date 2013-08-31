@@ -9,7 +9,7 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>AVF Demo App</title>
     </head>
     <body>
@@ -17,19 +17,19 @@
         <article id="pgHome" data-role="page">
             <header data-role="header">
                 <h1>Project Tracker</h1>
-                <h2>Deus Duke</h2>
-                <h3>AVF 1308 Demo App</h3>
             </header>
 
             <section data-role="content">
+                <h2>Deus Duke</h2>
+                <h3>AVF 1308 Demo App</h3>
                 <p>Welome to the Project Tracker demo!  This app will help free lancers and small teams keep up with their progress and due dates for their projects.</p>
 
                 <ul class="demo_list" data-role="listview" data-inset="true">
-                    <li data-role="list-divider">iOS / Android Native Features Demos</li>
+                    <li data-role="list-divider" data-theme="a">iOS / Android Native Features Demos</li>
                     <li>
-                        <a href="geolocation.html">
-                            <img src="img/location_icon.png" alt="Geolocation Icon" class="ui-li-icon ui-corner-none">
-                            Geolocation
+                        <a href="#pgDevice">
+                            <img src="img/location_icon.png" alt="Device Icon" class="ui-li-icon ui-corner-none">
+                            Device
                         </a>
                     </li>
                     <li>
@@ -39,49 +39,43 @@
                         </a>
                     </li>
                     <li>
-                        <a href="gallery.html">
+                        <a href="#pgGallery">
                             <img src="img/gallery_icon.png" alt="Gallery Icon" class="ui-li-icon ui-corner-none">
                             Gallery
                         </a>
                     </li>
                     <li>
-                        <a href="contacts.html">
+                        <a href="#pgContacts">
                             <img src="img/contacts_icon.png" alt="Contacts Icon" class="ui-li-icon ui-corner-none">
                             Contacts
                         </a>
                     </li>
+                    <li data-role="list-divider" data-theme="a">JSON-P Data APIs</li>
                     <li>
-                        <a href="compass.html">
-                            <img src="img/compass_icon.png" alt="Compass Icon" class="ui-li-icon ui-corner-none">
-                            Compass
-                        </a>
-                    </li>
-                    <li data-role="list-divider">JSON-P Data APIs</li>
-                    <li>
-                        <a href="instagram.html">
+                        <a href="#pgInstagram">
                             <img src="img/instagram-logo.png" alt="Instagram Logo" class="ui-li-icon ui-corner-none">
                             Instagram
                         </a>
                     </li>
                     <li>
-                        <a href="trelloapi.html">
+                        <a href="#pgTrello">
                             <img src="img/trello-logo.png" alt="Trello Logo" class="ui-li-icon ui-corner-none">
                             Trello
                         </a>
                     </li>
-                    <li data-role="list-divider">Research</li>
+                    <li data-role="list-divider" data-theme="a">Research</li>
                     <li>
-                        <a href="week2research.html">
+                        <a href="#pgWeek2">
                             Week 2 Research
                         </a>
                     </li>
                     <li>
-                        <a href="week3research.html">
+                        <a href="#pgWeek3">
                             Week 3 Research
                         </a>
                     </li>
                     <li>
-                        <a href="week4research.html">
+                        <a href="#pgWeek4">
                             Week 4 Research
                         </a>
                     </li>
@@ -89,14 +83,112 @@
             </section>
         </article>
 
-        <article id="pg" data-role="page">
+        <article id="pgDevice" data-role="page">
             <header data-role="header">
                 <h1>Project Tracker</h1>
-                <h2>Deus Duke</h2>
-                <h3>AVF 1308 Demo App</h3>
             </header>
-            <section id="pgConnectivity" data-role="content">
-                <p id="connectivityText"></p>
+            <section data-role="content">
+                <div id="device_info"></div>
+            </section>
+        </article>
+
+        <article id="pgGallery" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <img id="gallery_image">
+            </section>
+        </article>
+
+        <article id="pgContacts" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <ul id="contacts"></ul>
+            </section>
+        </article>
+
+        <article id="pgInstagram" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <div id="insta_data">
+                    
+                </div>
+            </section>
+        </article>
+        
+        <article id="pgTrello" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <div id="trello_data"></div>
+            </section>
+        </article>
+
+        <article id="pgWeek2" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <h3>Week 2 Research</h3>
+                
+                <p>
+                    Twitter could be use for login with open auth.  This would allow application developers to rely on Twitter accounts already made and allows the user to not have to remember another user name and password.  For payments, the same thing could be done as far as accounts and logins.  There has also been a few "pay with tweet" services popping up recently but Twitter is starting to crack down on these service.
+                    <br><br>
+                    I thought JSON-P was not very useful at all, until they went into the cross-domain possibilities.  Cross domain scripting is extremely useful at times but is usually blocked by the browser.  By allowing the client to execute a callback it looks like the JSON-P would allow the client to access data from a different domain.  This would actually be pretty useful at work!
+                    <br><br>
+                    Using JSON-P, you could store data locally on the device using system storage, for instance caching requests from twitter or Facebook.
+                    <br><br>
+                    I plan on using a dark, professional looking them similar to what you might see in many of todays professional applications like PS or Unity 3D.  Users will be able to take and store pictures to be used as thumbnails for their projects, and well as review items and information about a given project.  If possible, it would be cool to have an alarm feature that would go off as a reminder when the project is close to being due.
+                    <br><br>
+                    Probably the biggest lesson that I've learned as a developer is to prevent scope creep as much as possible.  This has plagued many project that I have worked on and a lot of them did not make it to completion.  Now I try my best to declare the boundaries and extents of a project up front to the best of my ability to ensure success and hit my targets. 
+                </p>
+            </section>
+        </article>
+
+        <article id="pgWeek3" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                
+                <h3>Week 3 Research</h3>
+                
+                <p>
+                    I think that the main thing that I could do for my app to increase accessibilty is to add the alt tags to the images.  This would allow screen readers to at least read the context of what the image contains.  Also this would help with SEO rankings by adding more keywords to my sites categorization, that is if the site were to be deployed to the web.
+                    <br><br>
+                    The most common support mechanisms that I saw when looking at review videos for mobile accessibility was the voice over options.  The help users by reading aloud the different areas of an application.  I think that we as developers could make better use of this by being sure to use text for things like buttons and logos as this would allow the screen ready to let the user know what is available to the visually impaired users.  If images are used for thing like buttons, there are options available via the Android and iOS api's that allow for adding a description to what this are of the application is to be used for.  This is read aloud by the screen ready and helps with the end user understanding the application.
+                    <br><br>
+                    One obvious device that helps with accessibility is the wheelchair.  This helps people that have lost the ability to walk to get around with their arms, or sometimes even via a lever if the wheelchair is motorized.  Another could be the more recent personal emergency response systems.  These devices are used for general responses catered to an individuals risk factors, like falling or the temperature falling to low.
+                    <br><br>
+                    One app that is built on Android specifically for mobile accessibility is the <a href="https://play.google.com/store/apps/details?id=es.codefactory.android.app.ma.vocalizerenudemo&hl=en">Mobile Accessibility Demo US</a>.  This is an app that is available on Android is pretty interesting.  It allows the user to slide their finger along the screen and when they get above a button it reads the button allowed to them.  They can then make selections after being given speech cues they allow them to perform basic phone functions like make phone calls, send emails, go through contacts, etc.
+                    <br><br>
+                    Another app is called <a href="https://play.google.com/store/apps/details?id=com.revolucian.enliven&hl=en">Free Colorblind Aid</a>.  This app is more geared towards designers but it allows them to see what their colorblind users would see.  This is useful so that they can test with that multiple blindness modes.
+                </p>
+            </section>
+        </article>
+
+        <article id="pgWeek4" data-role="page">
+            <header data-role="header">
+                <h1>Project Tracker</h1>
+            </header>
+            <section data-role="content">
+                <p>
+                    The top selling app category in Japan, Great Britain, and the USA is games.  Currently, the top application in all of these markets is a racing game call Asphalt 8.  It seems that with this information it might we worth investing the possibility of creating a mobile racing game after doing some research on what it is that makes this game so attractive and fun for it's players.  It looks like in the US, plans and data is much more costly than in the other countries, almost double in some cases[do we really have it that bad].  I would suggest that if the client want's to have a greater chance of being successful, they should investigate the possibility of release a mobile gaming app targeting the US market.
+                    <br><br>
+
+                    <i>
+                        (n.d.). Retrieved from Top of the App World: http://topappoftheworld.com/<br>
+                        Bryant, M. (2011, Jan 19). Around the world in 90 App Stores: Apple’s top sellers show differences in our app tastes. Retrieved from The Next Web. <br>
+                        Murphy, D. (2012, 06 16). How Bad Do We Really Have it? Bandwidth Caps Around the World. Retrieved from maximumpc: http://www.maximumpc.com/article/features/how_bad_do_we_really_have_it_bandwidth_caps_around_world
+                    </i>
+
+                </p>
             </section>
         </article>
 
@@ -108,6 +200,8 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+
+            $.mobile.page.prototype.options.addBackBtn = true;
 
             $("a#connectivity").click(function(){
                 var state = "";
